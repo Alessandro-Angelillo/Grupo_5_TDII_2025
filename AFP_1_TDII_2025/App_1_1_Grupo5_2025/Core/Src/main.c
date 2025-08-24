@@ -131,7 +131,11 @@ int main(void)
       i = (i + 1) % led_count;
     }
 
-  /* USER CODE END WHILE */
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+
+  /* USER CODE END 3 */
 }
 
 /**

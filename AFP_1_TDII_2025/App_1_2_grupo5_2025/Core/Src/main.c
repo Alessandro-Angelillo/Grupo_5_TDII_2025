@@ -109,16 +109,17 @@ int main(void)
 
   /* Infinite loop */
   GPIO_TypeDef* led_ports[] = {LD1_GPIO_Port, LD2_GPIO_Port, LD3_GPIO_Port};
-    uint16_t led_pins[] = {LD1_Pin, LD2_Pin, LD3_Pin};
-    const uint8_t led_count = 3;
-    uint8_t i = 0;
-    int8_t direction = 1; // 1 = adelante, -1 = atrás
-    GPIO_PinState button_state = GPIO_PIN_RESET;
-    GPIO_PinState last_button_state = GPIO_PIN_RESET;
-
-    while (1)
-    {
-      // Leer estado actual del botón
+      uint16_t led_pins[] = {LD1_Pin, LD2_Pin, LD3_Pin};
+      const uint8_t led_count = 3;
+      uint8_t i = 0;
+      int8_t direction = 1; // 1 = adelante, -1 = atrás
+      GPIO_PinState button_state = GPIO_PIN_RESET;
+      GPIO_PinState last_button_state = GPIO_PIN_RESET;
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+	  // Leer estado actual del botón
       button_state = HAL_GPIO_ReadPin(USER_Btn_GPIO_Port, USER_Btn_Pin);
 
       // Detectar flanco ascendente (de suelto a presionado)
@@ -127,19 +128,18 @@ int main(void)
         direction = -direction; // invertir sentido
         HAL_Delay(50); // anti-rebote básico
       }
-
       last_button_state = button_state;
-
-      // Encender LED actual
+       // Encender LED actual
       HAL_GPIO_WritePin(led_ports[i], led_pins[i], GPIO_PIN_SET);
       HAL_Delay(200);
       // Apagar LED actual
       HAL_GPIO_WritePin(led_ports[i], led_pins[i], GPIO_PIN_RESET);
       HAL_Delay(200);
-
-      // Calcular próximo índice circular
+       // Calcular próximo índice circular
       i = (i + direction + led_count) % led_count;
-    }
+
+  }
+   /* USER CODE BEGIN 3 */
   /* USER CODE END 3 */
 }
 
