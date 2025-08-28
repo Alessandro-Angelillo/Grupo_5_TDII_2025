@@ -2,7 +2,7 @@
  * API_GPIO.c
  *
  *  Created on: Aug 23, 2025
- *      Author: aless
+ *      Author: Ivan
  */
 
 /**   includes   **/
@@ -18,8 +18,8 @@
 
 /**
   * @brief  Enciende y apaga un LED con un retardo definido.
-  * @param  port: Puerto GPIO al que pertenece el pin del LED (ej: LD1_GPIO_Port).
-  * @param  pin: Pin del LED dentro del puerto (ej: LD1_Pin).
+  * @param  port: Puerto GPIO al que pertenece el pin del LED
+  * @param  pin: Pin del LED dentro del puerto
   * @param  delay: Tiempo en milisegundos que el LED permanecerá encendido y luego apagado.
   * @retval None
   */
