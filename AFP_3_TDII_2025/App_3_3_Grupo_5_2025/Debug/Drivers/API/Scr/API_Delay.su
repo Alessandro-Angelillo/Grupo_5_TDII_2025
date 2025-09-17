@@ -1,0 +1,4 @@
+../Drivers/API/Scr/API_Delay.c:11:6:delayInit	16	static
+../Drivers/API/Scr/API_Delay.c:17:6:delayRead	16	static
+../Drivers/API/Scr/API_Delay.c:26:6:delayWrite	16	static
+../Drivers/API/Scr/API_Delay.c:32:10:millis	8	static
