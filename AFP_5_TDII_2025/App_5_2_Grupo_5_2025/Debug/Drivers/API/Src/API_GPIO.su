@@ -1,0 +1,10 @@
+../Drivers/API/Src/API_GPIO.c:21:6:writeLedOn_GPIO	16	static
+../Drivers/API/Src/API_GPIO.c:26:6:writeLedOff_GPIO	16	static
+../Drivers/API/Src/API_GPIO.c:31:6:toggleLed_GPIO	16	static
+../Drivers/API/Src/API_GPIO.c:36:9:getLedCount	4	static
+../Drivers/API/Src/API_GPIO.c:41:7:getLedByIndex	16	static
+../Drivers/API/Src/API_GPIO.c:56:6:debounceInit_GPIO	8	static
+../Drivers/API/Src/API_GPIO.c:64:6:debounceUpdate_GPIO	24	static
+../Drivers/API/Src/API_GPIO.c:92:16:readButtonState_GPIO	4	static
+../Drivers/API/Src/API_GPIO.c:97:8:readKey_GPIO	4	static
+../Drivers/API/Src/API_GPIO.c:110:6:MX_GPIO_Init	56	static
