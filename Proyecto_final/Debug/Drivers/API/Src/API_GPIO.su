@@ -1,0 +1,7 @@
+../Drivers/API/Src/API_GPIO.c:4:6:MX_GPIO_Init	40	static
+../Drivers/API/Src/API_GPIO.c:22:6:heaterOn	8	static
+../Drivers/API/Src/API_GPIO.c:27:6:heaterOff	8	static
+../Drivers/API/Src/API_GPIO.c:33:6:fanOn	8	static
+../Drivers/API/Src/API_GPIO.c:38:6:fanOff	8	static
+../Drivers/API/Src/API_GPIO.c:43:6:motorOn	8	static
+../Drivers/API/Src/API_GPIO.c:48:6:motorOff	8	static
